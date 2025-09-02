@@ -806,7 +806,7 @@ footer h3 {
 .adress-list li:nth-child(3):after {
 	position: absolute;
 	font-family: 'FontAwesome';
-	content: "\f003";
+	content: "\f232";
 	left: 0;
 	top: 0;
 	font-size: 13px;
