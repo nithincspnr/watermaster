@@ -19,10 +19,10 @@ jQuery(function ($) {
         var userEmail = $("#user-email").val().trim();
         var userFeedback = $("#user-feedback").val().trim();
         if (userName && userPhone) {
-          var whatsAppMessage = `Name: ${userName}\nPhone: ${userPhone}\nEmail: ${userEmail}\nFeedback: ${userFeedback}`;
-          var whatsappUrl =
-            "https://wa.me/919995028299?text=" +
-            encodeURIComponent(whatsAppMessage);
+          var whatsAppMessage = `Name: ${userName}, Phone: ${userPhone}, Email: ${userEmail}, Message: ${userFeedback}`;
+          var whatsappUrl = `https://wa.me/919995028299?text=${encodeURIComponent(
+            whatsAppMessage
+          )}`;
           window.open(whatsappUrl, "_blank");
         } else {
           alert("Please enter your Name and Contact number before submitting.");
